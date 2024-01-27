@@ -1,51 +1,72 @@
-A.)Instructions for running the project:
-(You must install npm in your system)
-STEPS:
-1.Open the working directory in the command prompt or terminal.
-2.Use the command npm install(to install all the dependencies as mentioned below):
-   "animate.css": "^3.7.2",
-    "body-parser": "^1.19.0",
-    "ejs": "^2.6.2",
-    "express": "^4.17.1",
-    "express-session": "^1.16.2",
-    "method-override": "^3.0.0",
-    "mongoose": "^5.6.9",
-    "node": "^12.8.0",
-    "passport": "^0.4.0",
-    "passport-local": "^1.0.0",
-    "passport-local-mongoose": "^5.0.1",
-    "request": "^2.88.0"
-3.After the dependencies are installed  run the command: node app.js.
-4.After the server has started, you can now run the project on local host.
-5.The test QR codes are saved in the QR directory in the main project folder.
-6.To test the location tracer, you can enter the IPv4 address or you can choose among the following IPs for testing:
---> 42.108.29.90
---> 47.30.189.88
-7.Sample User:username:Gaurav
-              password:admin
+# GoTransport
+> It is a web application that makes the life of people using public transport easier.
 
-Note : The SocialPosts page has been set to a timeout of 6 seconds so be patient for a 6 seconds for proper loading.
+Link: https://gotransport.herokuapp.com
 
+Presentation Link: https://gotransport.netlify.com 
 
+## Features of our WebApp: 
 
-B.)Features of our WebApp:
-1.SafeHouse
-2.SOS
-3.Route Tracing
-4.Book Seats according to preference
-5.Track the Mode of Transport
-6.Geographic Information System
-7.QR Based Ticket System
-8.Free Coins on Every Transaction
-9.Leaderboard for most no. of scoins.
-10.SocialPosts for creating awareness among the Youth
-11.SignUp/Login
-12.Chatbot for Complaining
+1. Safe House
+1. SOS
+1. Route Tracing
+1. Book Seats according to preference 
+1. Track the Mode of Transport 
+1. Geographic Information System 
+1. QR Based Ticket System 
+1. Free Coins on Every Transaction 
+1. Leaderboard for most no. of coins
+1. SocialPosts for creating awareness among the Youth 
+1. Authorization/Authentication
+1. Chatbot for Complaining
 
-Note About the Presentation :
+> We are focussing on the need of safety in our transportation system. That's why we are taking the helping hand of Mapping Technologies along with some other user-interactive applications to improvise these situations so that the transportation system can be made safe for people of all genders and each age group.
 
-The presentation for the complete GoTransport Project is stored in the presentation folder in a web format, by the name Presentation.html in the main project folder.
-The Slides can be slided right with the right arrow key.And the slides which have downward arrows would be slided in the downward direction with the help of down key.
+## SOME DETAILS THAT HELP MAKE THIS POSSIBLE:
 
+### SafeHouse:
+This is a Map based solution in which if the user is struck at some location he is not feeling safe , he/she can use this utility to locate a nearby safehouse which would be located on the map so that cabs and other modes of transport could be boarded from there.
 
-On a Side note Presentation can also be accessed on the website as it is deployed on the website--> gtran.netlify.com 
+### SOS:
+For Someone struck in trouble we have developed a Emergency button which on clicking will send the location co-ordinates of the user via mail along with the message that the user is in danger.
+
+### Route Tracing:
+We have used the Maps API in order to trace the route of the respective mode of transport.This Utility not only traces the route but can also help in booking the seats via the payment gateway. With the help of this user can book any seat of his choice and can easily check the route to be followed.
+
+### Track Your Mode:
+In this Project we have deployed a JavaScript Based Maps API in order to trace the location of the mode of transport the user wants to trace.
+
+### Geographic Information System:
+GIS offer transport planners a medium for storing and analyzing data on population densities, land uses, travel behavior, etc.Typical applications include highway maintenance, traffic modelling, accident analysis, and route planning and environmental assessment of road schemes.
+
+## OTHER USEFUL USER-INTERACTIVE TECHNOLOGIES:
+* QR Code Based Tickets
+* Free Coins on Every Transaction
+* Leaderboard based on the number of coins
+* SocialPosts for Increasing awareness among Youth
+* Interactive UI having animations.
+* ChatBot for Complaints
+
+## Getting the Sources
+First, fork the GoTransport repository so that you can make a pull request. Then, clone your fork locally: git clone https://github.com/[your-github-account]/GoTransport.git Occasionally you will want to merge changes in the upstream repository (the official code repo) with your fork.
+```
+cd GoTransport
+git checkout master
+git pull https://github.com/hargun79/GoTransport.git master
+```
+Manage any merge conflicts, commit them, and then push them to your fork.
+
+```
+Next, open the app.js file and on line no. 16 and 24 replace with your own MongoDb cluster link.
+```
+
+To setup all node modules, in the terminal run:
+```
+npm install
+```
+## Production
+in the terminal just run
+```
+node app.js
+```
+> Note : The SocialPosts page has been set to a timeout of 6 seconds so be patient for a 6 seconds for proper loading.
